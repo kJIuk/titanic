@@ -2,7 +2,7 @@ import argparse
 import os
 import sys
 
-from dataset import load_data
+from dataloader import TitanicDataLoader
 
 def argument_parser():
     parser = argparse.ArgumentParser()
@@ -12,7 +12,7 @@ def argument_parser():
 
 
 def main(args):
-    load_data(args.train_data)
+    data = TitanicDataLoader(args.train_data)
 
     pass
 

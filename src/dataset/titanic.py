@@ -17,7 +17,7 @@ warnings.filterwarnings("ignore")
 plt.ion()   # interactive mode
 
 
-class TitanicDataLoader(Dataset):
+class Titanic(Dataset):
     """Face Landmarks dataset."""
 
     def __init__(self, csv_file, root_dir='', transform=None):
